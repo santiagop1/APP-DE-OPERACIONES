@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>OPERACIONES</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button routerLink="/home">
+    VOLVER
+  </ion-button>
+
+  <ion-item>
+    <ion-label position="floating">NUMERO UNO</ion-label>
+    <ion-input [(ngModel)]="numero1"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">OPERACION</ion-label>
+    <ion-input [(ngModel)]="operacion"></ion-input>
+  </ion-item>
+    
+  <ion-item>
+    <ion-label position="floating">NUMERO DOS</ion-label>
+    <ion-input [(ngModel)]="numero2"></ion-input>
+  </ion-item>
+
+  <ion-button color="success" (click)="calcular()">
+    CALCULAR
+  </ion-button>
+
+  
+</ion-content>

@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>SALUDO</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button routerLink="/home">
+    VOLVER
+  </ion-button>
+
+  <ion-item>
+    <ion-label position="floating">Escriba su Nombre:</ion-label>
+    <ion-input [(ngModel)]="saludo"></ion-input>
+  </ion-item>
+
+  <ion-button color="success" (click)="saludar()">
+    Saludar
+  </ion-button>
